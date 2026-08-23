@@ -50,6 +50,33 @@ cp ft_zurich/include/*.h C00/include/
 
 Build the library separately on every target operating system. Do not copy a library archive built on one OS to another OS; instead, clone or copy the source code there and run the build command again.
 
+### Makefile
+
+```sh
+NAME := bin/app
+
+CC := gcc
+CFLAGS := -Wall -Wextra -Werror -Iinclude
+LDFLAGS := -Llib
+LDLIBS := -lft_zurich
+
+SRC := $(shell find src -name "*.c")
+OBJ := $(patsubst src/%.c,build/%.o,$(SRC))
+
+$(NAME): $(OBJ) lib/libft_zurich.a
+	@mkdir -p bin
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME) $(LDFLAGS) $(LDLIBS)
+
+build/%.o: src/%.c
+	@mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -rf bin build
+
+.PHONY: clean
+```
+
 ## Screenshot
 
 ![My C project in VS Code](assets/1.png)
