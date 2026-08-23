@@ -1,0 +1,46 @@
+# Build folders in every project
+**/build/
+**/bin/
+**/obj/
+**/out/
+**/dist/
+
+# C/C++ compiled files
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.elf
+
+# Dependency and compiler-generated files
+*.d
+*.dep
+*.gch
+
+# Test, coverage, profiling output
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
+
+# VS Code and other editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Logs and local environment files
+*.log
+.env
+.env.*
+!.env.example
