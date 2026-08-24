@@ -44,8 +44,8 @@ After building, copy the library and the public header files into your project:
 
 ```sh
 
-cp ft_zurich/lib/libft_zurich.a C00/lib/
-cp ft_zurich/include/*.h C00/include/
+cp ft_zurich/lib/libft_zurich.a Excersices/lib/
+cp ft_zurich/include/*.h Excersices/include/
 ```
 
 Build the library separately on every target operating system. Do not copy a library archive built on one OS to another OS; instead, clone or copy the source code there and run the build command again.
