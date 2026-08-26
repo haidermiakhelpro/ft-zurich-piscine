@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_zurich.h                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kali <kali@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/26 11:22:08 by kali              #+#    #+#             */
-/*   Updated: 2026/08/26 11:23:57 by kali             ###   ########.fr       */
+/*   Created: 2026/08/25 16:38:12 by kali              #+#    #+#             */
+/*   Updated: 2026/08/25 16:42:17 by kali             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ZURICH_H
-#define FT_ZURICH_H
 
- #include <stddef.h>
- #include <unistd.h>
- 
- size_t ft_strlen(const char *str);
+#include "ft_zurich.h"
 
- void ft_putchar(char c);
+char *ft_strcpy(char *dest, char *src) {
+    int i;
+    i=0;
 
- char *ft_strcpy(char *dest, char *src);
- char *ft_strncpy(char *dest, char *src, unsigned int n);
- int ft_str_is_alpha(char *str);
-
-
-#endif
+    while (src[i]!='\0')
+    {
+       dest[i] = src[i];
+       i++;
+    }
+    
+    
+    return (dest);
+}

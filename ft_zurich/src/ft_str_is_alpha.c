@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_zurich.h                                        :+:      :+:    :+:   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kali <kali@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/26 11:22:08 by kali              #+#    #+#             */
-/*   Updated: 2026/08/26 11:23:57 by kali             ###   ########.fr       */
+/*   Created: 2026/08/26 11:22:19 by kali              #+#    #+#             */
+/*   Updated: 2026/08/26 11:25:07 by kali             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ZURICH_H
-#define FT_ZURICH_H
 
- #include <stddef.h>
- #include <unistd.h>
- 
- size_t ft_strlen(const char *str);
+int ft_str_is_alpha(char *str) {
 
- void ft_putchar(char c);
-
- char *ft_strcpy(char *dest, char *src);
- char *ft_strncpy(char *dest, char *src, unsigned int n);
- int ft_str_is_alpha(char *str);
-
-
-#endif
+    while (*str)
+    {
+        /* code */
+    }
+    
+}
